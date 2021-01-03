@@ -222,18 +222,17 @@ public class Scene extends JPanel {
 		
 		
 		
-		//-----------------------------------------------
-		Maillon maillon = new Maillon(this.piece1);
-	    maillon.setPremier(maillon);
-		maillon.ajouterALaFin(this.piece2);
-		maillon.ajouterALaFin(this.piece3);
-		maillon.ajouterALaFin(this.piece4);
-		maillon.ajouterALaFin(this.piece5);
-		maillon.ajouterALaFin(this.piece6);
-		maillon.ajouterALaFin(this.piece7);
-		maillon.ajouterALaFin(this.piece8);
-		maillon.ajouterALaFin(this.piece9);
-		maillon.ajouterALaFin(this.piece10);
+		//----------------------------------------------
+		Maillon.ajouterALaFin(piece1);
+		Maillon.ajouterALaFin(piece2);
+		Maillon.ajouterALaFin(piece3);
+		Maillon.ajouterALaFin(piece4);
+		Maillon.ajouterALaFin(piece5);
+		Maillon.ajouterALaFin(piece6);
+		Maillon.ajouterALaFin(piece7);
+		Maillon.ajouterALaFin(piece8);
+		Maillon.ajouterALaFin(piece9);
+		Maillon.ajouterALaFin(piece10);
 		
 		/*maillon.afficheListe();
 		

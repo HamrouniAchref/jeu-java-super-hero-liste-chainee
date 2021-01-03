@@ -83,14 +83,14 @@ public class Maillon {
             
             
             
-            private Maillon getDernierElement() {
+            private static Maillon getDernierElement() {
     			Maillon dernier= premier;
     			while (dernier.getSuivant() != null) {
     			dernier= dernier.getSuivant();
     			}
     			return dernier;
     			}
-		public void ajouterALaFin(Alphabet a) {
+		public static void ajouterALaFin(Alphabet a) {
 			if (estVide()) {
 			premier= new Maillon(a);
 			} else {
