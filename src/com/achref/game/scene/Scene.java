@@ -223,6 +223,7 @@ public class Scene extends JPanel {
 		
 		
 		//----------------------------------------------
+		//ajouter les alphabets  la liste chainee 
 		Maillon.ajouterALaFin(piece1);
 		Maillon.ajouterALaFin(piece2);
 		Maillon.ajouterALaFin(piece3);
@@ -234,11 +235,12 @@ public class Scene extends JPanel {
 		Maillon.ajouterALaFin(piece9);
 		Maillon.ajouterALaFin(piece10);
 		
-		/*maillon.afficheListe();
+System.out.println("affichage de la liste des alphabets dans la scene selon l'ordre  \n (affichage de la liste chainee ) ");	
+		Maillon.afficheListe();
 		
-System.out.println("------------------");
+System.out.println("-----------------------------------------------------------------------------------------------------");
 
-maillon.afficheListe();*/
+
 		//-----------------------------------------------
 		
 
@@ -400,6 +402,8 @@ maillon.afficheListe();*/
 		
     	// Détection des contacts de hero avec alpha
 	     StringBuffer s = new StringBuffer(m);
+	     
+	     //le variable  l prend le premier element de l liste 
 	    l= Maillon.getPremier();
  	 	while(l!=null){
  	 		if(this.hero.proche(l.getValeur())){
@@ -415,7 +419,7 @@ maillon.afficheListe();*/
  	 	 				 System.out.println(s);
  	 	 				this.score.setNbrePieces(this.score.getNbrePieces() + 1);
  	 				}
- 	 				
+ 	 				//supprimer un element de la liste chainee 
  	 				l.setPremier(l.supprimeElement(Maillon.getPremier(), l.getValeur()));
  	 				
  	 				
